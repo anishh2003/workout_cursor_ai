@@ -39,7 +39,7 @@ Performance Optimization
 - Implement proper error handling for Supabase operations, including network errors.
 
 Key Conventions
-1. Use GoRouter for navigation and deep linking.
+1. Use GoRouter for navigation and deep linking. 
 2. Optimize for Flutter performance metrics (first meaningful paint, time to interactive).
 3. Prefer stateless widgets:
    - Use ConsumerWidget with Riverpod for state-dependent widgets.
@@ -88,6 +88,11 @@ lib/
               └── feature_name_screen.dart  
 
 ```
+
+Routing
+- all routing logic should be in a separate file. 
+- the file should be in a folder called router , which is in the same level as main.dart
+
 
 Testing
 - Use the standard unit testing for flutter
