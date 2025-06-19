@@ -1,16 +1,60 @@
-# workout_tracker
+# Workout Tracker
 
-A new Flutter project.
+A cross-platform Flutter app to track your workouts, built with Riverpod, GoRouter, and best practices for maintainability and performance.
+
+## Features
+- Add, edit, and delete workouts
+- Track sets, exercises, weights, and repetitions
+- Persistent local storage
+- Responsive UI with Material 3
+- Riverpod for state management
+- GoRouter for navigation
+- Comprehensive unit, widget, and integration tests
+
+## Project Structure
+```
+lib/
+  ├── main.dart
+  ├── router/           # App routing (GoRouter)
+  ├── theme/            # Theme and style definitions
+  ├── common/           # Reusable widgets and helpers
+  ├── models/           # Data models (Workout, Exercise, etc.)
+  └── features/
+      ├── workout/      # Single workout feature (controller, repository, screen, widgets)
+      └── workoutList/  # Workout list feature (controller, repository, screen, widgets)
+```
 
 ## Getting Started
+1. **Install dependencies:**
+   ```sh
+   flutter pub get
+   ```
+2. **Run the app:**
+   ```sh
+   flutter run
+   ```
+3. **Run tests:**
+   - Unit & widget tests:
+     ```sh
+     flutter test
+     ```
+   - Integration tests:
+     ```sh
+     flutter test integration_test/app_test.dart
+     ```
 
-This project is a starting point for a Flutter application.
+## Testing
+- **Unit tests:** `test/unit/`
+- **Widget tests:** `test/widget/`
+- **Integration tests:** `integration_test/`
 
-A few resources to get you started if this is your first Flutter project:
+## Coding Standards
+- Uses Riverpod's for state management
+- Follows best practices for error handling, theming, and file structure
+- See `.cursor/rules/project-rules.mdc` for detailed project rules
 
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## License
+[MIT](LICENSE)
